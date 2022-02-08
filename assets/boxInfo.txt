@@ -1,0 +1,167 @@
+#general
+	Text Setting
+	  letter-spacing:3px
+	  line-height: 23px
+
+#Nav
+	Main Nav Section
+	  margin-top:40px
+	  padding-bottom:20px
+
+	Logo Box
+	  50px width x 30px height
+
+	website Name box
+	  250px width x 30px height
+	  font-family: 'Lobster', cursive;
+	  font-color: #AD1129
+	  font-size:66px
+
+	Nav Box
+	  250px width x 30px height
+
+#Footer
+	Footer Section
+	  margin-top: 40px
+	  padding-bottom: 5px
+
+	Footer Nav Box
+	  300px width x 30px height
+	  font-family: 'Roboto', sans-serif; 
+		size - 14px
+
+	Copyright Section
+	  padding-bottom: 10px
+
+	Copyright Box
+	  150px width x 30px height
+	  font-family: 'Roboto', sans-serif; 
+		size - 7px
+
+
+#Header
+	Header Section
+	  padding-bottom: 40px
+	  border-bottom: 1px solid #DDD
+
+	Header Box
+	  920px width x 450px height
+
+
+-----Page 1-------
+
+
+
+#About Gas-X
+	About Section
+	  margin-top: 100px
+	  padding-bottom: 100px
+	  border-bottom: 1px solid #DDD
+
+	About Section Image Size
+	  250px width x 350px height
+
+	About Content Box
+	  500px width x 350px height
+	  title - font-family: 'Lobster', cursive; 
+		size - 31px
+	  paragraph - font-family: 'Roboto', sans-serif; 
+		size - 14px
+	  font-color: #052146
+
+	About Section Button
+	  margin-top: 20px
+	  padding-bottom: 20px
+
+	About Section Button Box
+	  80px width x 30px height
+
+
+#Benefit of Gas-X
+	Benefit Section
+	  margin-top: 40px
+	  padding-bottom: 20px
+
+	Benefit Title Section
+	  margin-bottom: 40px
+
+	Benefit Title Box
+	  40px width x 50px height
+	  font-family: 'Lobster', cursive; 
+		size - 31px
+	  font-color: #052146
+
+	Benefit Box
+	  250px width x 300px height
+	  font-family: 'Roboto', sans-serif; 
+		size: 14px
+	  font-color: #052146
+
+	Benefit Section Button
+	  margin-top: 20px
+	  padding-bottom: 20px
+
+	Benefit Section Button Box
+	  80px width x 30px height
+
+
+#Flavor and Price
+	Flavor Section
+	  margin-top: 50px
+	  padding-bottom: 20px
+
+	Flavor Box
+	  300px width x 300px height
+	  font-family: 'Roboto', sans-serif; 
+		size: 14
+	  font-color: #052146
+
+	Flavor Section Button
+	  margin-top: 20px
+	  padding-bottom: 20px
+
+	Flavor Section Button Box
+	  80px width x 30px height
+
+
+
+-----Page 2-------
+
+
+
+#CompareProduct
+	Compare Section
+	  margin-top: 120px
+	  padding-bottom: 120px
+
+	Compare Text Box
+	  250 width x 250px height
+	  title - font-family: 'Lobster', cursive; 
+		size - 31px
+	  paragraph - font-family: 'Roboto', sans-serif; 
+		size - 14px
+	  font-color: #052146
+
+	Compare Image Box
+	  200px width x 250px height
+
+
+#Flavor Choice
+	Flavor Choice Section
+	  padding-bottom: 40px
+
+	Flavor Image Box
+	  200px width x 400px height
+
+	Flavor Content Box
+	  400px width x 400px height
+	  font-family: 'Roboto', sans-serif; 
+		size: 14
+	  font-color: #052146 & #AD1129 for price
+
+	Flavor Button
+	  margin-top: 20px
+	  padding-bottom: 20px
+
+	Flavor Button Box
+	  80px width x 30px height
