@@ -7,18 +7,20 @@ watch record
 p
 {
   color: #fff;
-  line-height: 100px;
+  line-height: 30px;
   background: #000;
   margin: 0;
   padding: 0;
+  text-align: center;
+  font-family: 'Baloo Bhaijaan 2', cursive;
 }
 /*End basic reset*/
 
 body
 {
-  font-family: "Helvetica Neue", Helvetica, Arial, sns-serif;
   font-size: 12px;
   color: #333;
+  font-family: 'Baloo Bhaijaan 2', cursive;
 }
 
 
@@ -62,14 +64,16 @@ we center the box using margin 0 auto and give it a fixed width of 920 + 20px +2
   padding-right: 20px;
 }
 
-#mainHeader
+/*__________________________________
+          Main Nav Section
+__________________________________*/
+#mainNav
 {
   margin-top: 40px;
-  padding-bottom: 40px;
+  padding-bottom: 20px;
   overflow: hidden;
   /* fixes colapsing parent
   http://coding.smashingmagazine.com/2009/10/19/the-mystery-of-css-float-property */
-  border-bottom: solid 1px #DDD;
 }
 
 #logo
@@ -78,65 +82,149 @@ we center the box using margin 0 auto and give it a fixed width of 920 + 20px +2
   float: left;
 }
 
-#mainNav
-{
-  float: right;
-  width: 500px;
-}
-
-#promo
-{
-  margin-top: 40px;
-  overflow: hidden;
-  /* fixes colapsing parent*/
-  border-bottom: solid 1px #DDD;
-  padding-bottom: 40px;
-}
-
-/*Get rid of this, here just to give different height to promo*/
-#promo p
-{
-line-height: 250px;
-}
-
-#promoText
+#WebName
 {
   float: left;
-  width: 600px;
+  width: 350px;
+  margin-left: 80px;
 }
 
-#promoImg
+#Nav
 {
   float: right;
-  width: 280px;
+  width: 200px;
 }
 
-#productInfo
+/*__________________________________
+          Main header Section
+__________________________________*/
+
+#Header
+{
+  padding-bottom: 40px;
+  overflow: hidden;
+  border-bottom: solid 1px #DDD;
+}
+
+#IntroHeader p
+{
+  line-height: 450px;
+}
+
+#IntroHeader
+{
+    float: left;
+    width: 100%;
+}
+
+/*__________________________________
+          About Gas-x Section
+__________________________________*/
+
+.left
+{
+  margin-top: 100px;
+  padding-bottom: 100px;
+  overflow: hidden;
+  border-bottom: solid 1px #DDD;
+}
+
+.leftImg
+{
+  float: left;
+  width: 250px;
+  margin-left: 80px;
+}
+
+.left p
+{
+  line-height: 350px;
+}
+
+.leftContent
+{
+  float: left;
+  width: 500px;
+  margin-left: 20px;
+}
+
+/*__________________________________
+          About benefit Section
+__________________________________*/
+#benefit
 {
   margin-top: 40px;
   overflow: hidden;
-  border-bottom: solid 1px #DDD;
-  padding-bottom: 40px;
+  padding-bottom: 50px;
 }
 
+.benefitTitle
+{
+  margin-bottom: 40px;
+}
+
+.benefitTitle p
+{
+  line-height: 50px;
+}
+
+
+.benefitDetail
+{
+  float: left;
+  width: 250px;
+  margin-left: 55px;
+}
+
+.benefitDetail2
+{
+  float:left;
+  width: 250px;
+  margin-left: 30px;
+}
 /*Get rid of this, here just to give a different height to productInfo*/
-#productInfo p
+.benefitDetail p
 {
   line-height: 300px;
 }
 
-.productDesc
+.benefitDetail2 p
 {
-  float: left;
-  width: 200px;
-  margin-right: 40px;
+  line-height: 300px;
+}
+/*__________________________________
+       flavor & price Section
+__________________________________*/
+#flavor
+{
+  margin-top: 50px;
+  padding-bottom: 100px;
+  overflow: hidden;
+  border-bottom: solid 1px #DDD;
 }
 
-.productDescLast
+#flavor p
 {
-  float: right;
-  width: 200px;
+  line-height: 300px;
 }
+
+.flavorBox
+{
+  float: left;
+  width: 300px;
+}
+
+.flavorBox2
+{
+  float: left;
+  width: 300px;
+  margin-left: 10px;
+}
+
+/*__________________________________
+          Footer Section
+__________________________________*/
+
 
 #mainFooter
 {
@@ -151,7 +239,7 @@ line-height: 250px;
   width: 500px;
 }
 
-#copyRight
+#contact
 {
   float: right;
   width: 310px;
