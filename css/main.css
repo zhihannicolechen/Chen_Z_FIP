@@ -78,21 +78,21 @@ __________________________________*/
 
 #logo
 {
-  width: 200px;
+  width: 50px;
   float: left;
 }
 
 #WebName
 {
   float: left;
-  width: 350px;
-  margin-left: 80px;
+  width: 250px;
+  margin-left: 270px;
 }
 
 #Nav
 {
   float: right;
-  width: 200px;
+  width: 250px;
 }
 
 /*__________________________________
@@ -148,6 +148,23 @@ __________________________________*/
   margin-left: 20px;
 }
 
+/*__________________________________
+           button box
+__________________________________*/
+
+.button
+{
+  margin-top: 20px;
+  padding-bottom: 20px;
+  overflow: hidden;
+}
+
+.theButton
+{
+  width: 80px;
+  margin-left: 420px;
+}
+
 /*page1*/
 
 /*__________________________________
@@ -157,7 +174,7 @@ __________________________________*/
 {
   margin-top: 40px;
   overflow: hidden;
-  padding-bottom: 50px;
+  padding-bottom: 20px;
 }
 
 .benefitTitle
@@ -200,9 +217,8 @@ __________________________________*/
 #flavor
 {
   margin-top: 50px;
-  padding-bottom: 100px;
+  padding-bottom: 20px;
   overflow: hidden;
-  border-bottom: solid 1px #DDD;
 }
 
 #flavor p
@@ -297,6 +313,25 @@ __________________________________*/
 }
 
 /*__________________________________
+           button box
+__________________________________*/
+
+.button2
+{
+  margin-top: 20px;
+  padding-bottom: 100px;
+  overflow: hidden;
+  border-bottom: solid 1px #DDD;
+}
+
+.theButton2
+{
+  width: 80px;
+  margin-left: 420px;
+}
+
+
+/*__________________________________
           Footer Section
 __________________________________*/
 
@@ -304,7 +339,7 @@ __________________________________*/
 #mainFooter
 {
   margin-top: 40px;
-  margin-bottom: 40px;
+  margin-bottom: 5px;
   overflow: hidden;
 }
 
@@ -318,4 +353,10 @@ __________________________________*/
 {
   float: right;
   width: 310px;
+}
+
+#copyright
+{
+  padding-bottom: 10px;
+  overflow: hidden;
 }
