@@ -118,7 +118,7 @@ __________________________________*/
 }
 
 /*__________________________________
-          About Gas-x Section
+           left flow box
 __________________________________*/
 
 .left
@@ -147,6 +147,8 @@ __________________________________*/
   width: 500px;
   margin-left: 20px;
 }
+
+/*page1*/
 
 /*__________________________________
           About benefit Section
@@ -221,6 +223,79 @@ __________________________________*/
   margin-left: 10px;
 }
 
+/*page 2*/
+/*__________________________________
+      normal & light section
+__________________________________*/
+#normalLight
+{
+  margin-top: 120px;
+  padding-bottom: 120px;
+  overflow: hidden;
+
+  border-bottom: solid 1px #DDD;
+}
+
+#sideBox
+{
+  width: 250px;
+  float: left;
+  margin-left: 100px;
+}
+
+#centerImg
+{
+  float: left;
+  width: 200px;
+  margin-left: 10px;
+}
+
+#sideBox2
+{
+  width: 250px;
+  float: left;
+  margin-left: 10px;
+}
+
+#normalLight p
+{
+  line-height: 250px;
+}
+
+/*__________________________________
+          flavorContent Section
+__________________________________*/
+#flavorChoice
+{
+  padding-bottom: 40px;
+  border-bottom: solid 1px #DDD;
+
+  overflow: hidden;
+}
+
+#flavorChoice p
+{
+  line-height: 400px;
+}
+
+.flavorImg
+{
+  float: left;
+  width: 200px;
+
+  margin-left: 140px;
+  margin-top: 40px;
+}
+
+.flavorContent
+{
+  float: left;
+  width: 400px;
+
+  margin-left: 40px;
+  margin-top: 40px;
+}
+
 /*__________________________________
           Footer Section
 __________________________________*/
@@ -244,5 +319,3 @@ __________________________________*/
   float: right;
   width: 310px;
 }
-
-/*page 2*/
