@@ -5,7 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Web Page Scaffold</title>
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <!-- reset.css must link before the main.css -->
   <link href="css.reset.css" rel="stylesheet" type="text/css">
   <link href="css/main.css" rel="stylesheet" type="text/css">
@@ -13,47 +15,67 @@
 <body>
   <!-- content starts -->
   <main>
-    <section id="topBar"></section>
-    <!-- end topBar -->
-
     <div id="siteContainer">
-
-      <header id="mainHeader">
+      <h1 class="hidden">Main Navigation for Gas-X</h1>
+      <nav id="mainNav">
         <div id="logo"><p>Logo</p></div>
         <!-- end logo -->
-        <nav id="mainNav"><p>Nav</p></nav>
-        <!-- end mainNav -->
+        <div id="WebName"><p>Gas-X</P></div>
+        <!-- end title -->
+        <nav id="Nav"><p>Nav</p></nav>
+        <!-- end Nav -->
+      </nav>
+      <!-- end main Nav -->
+      <header id="Header">
+        <h1 class="hidden">Hero Image With Website Introduction</h1>
+        <div id="IntroHeader"><p>Header & Title</p></div>
       </header>
-      <!-- end main header -->
+      <!-- end the main header -->
 
-      <section id="promo">
-        <div id="promoText"><p>Promo Text</p></div>
-        <!-- end promoText -->
-        <div id="promoImg"><p>Promo Image</p></div>
-        <!-- end promoImg -->
+      <section class="left">
+        <h1 class="hidden">About Gas-X Section</h1>
+        <div class="leftImg"><p>About Gas-x Image</p></div>
+        <div class="leftContent"><p>About Gas-X Content</p></div>
       </section>
-      <!-- end promo section-->
+      <!-- end the about Gas-X section -->
 
-      <section id="productInfo">
-        <section class="productDesc"><p>Product Images &amp; Text</p></section>
-        <!-- end productDecs1 -->
-        <section class="productDesc"><p>Product Images &amp; Text</p></section>
-        <!-- end productDesc2 -->
-        <section class="productDesc"><p>Product Images &amp; Text</p></section>
-        <!-- end productDesc3 -->
-        <section class="productDescLast"><p>Product Images &amp; Text</p></section>
-        <!-- end productDescLast -->
+
+      <section id="benefit">
+        <h1 class="hidden">benefit of Gas-X Section</h1>
+        <div class="benefitTitle"><p>Benefit of the Gas-X</p></div>
+        <section class="benefitDetail"><p>Benefit 1</p></section>
+        <!-- end benefit 1 -->
+        <section class="benefitDetail2"><p>Benefit 2</p></section>
+        <!-- end benefit 2 -->
+        <section class="benefitDetail2"><p>Benefit 3</p></section>
+        <!-- end benefit 3 -->
       </section>
-      <!-- end productInfo -->
+      <!-- end the benefit of Gas-x -->
 
+      <section id="flavor">
+        <h1 class="hidden">Flavor & Price Section</h1>
+        <section class="flavorBox"><p>flavor 1</p></section>
+        <!-- end flavor 1 -->
+        <section class="flavorBox2"><p>flavor 2</p></section>
+        <!-- end flavor 2 -->
+        <section class="flavorBox2"><p>flavor 3</p></section>
+        <!-- end flavor 3 -->
+      </section>
+      <!-- end flavor and price section -->
+
+      <section class="left">
+        <h1 class="hidden">Company Goal of Gas-X</h1>
+        <div class="leftImg"><p>Image of Gas-x Goal</p></div>
+        <div class="leftContent"><p>Goal content & button</p></div>
+      </section>
+      <!-- end the goal section -->
       <footer id="mainFooter">
         <div id="footerNav"><p>Footer Nav</p></div>
         <!-- end footerNav -->
-        <div id="copyRight"><p>Copyright Info</p></div>
+        <div id="contact"><p>Contact</p></div>
         <!-- end copyright -->
       </footer>
       <!-- end mainFooter -->
-
     </div>
 
   </main>
