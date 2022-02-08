@@ -1,0 +1,160 @@
+@charset "UTF-8";
+/* CSS Document */
+/*---
+missing part of code
+watch record
+---*/
+p
+{
+  color: #fff;
+  line-height: 100px;
+  background: #000;
+  margin: 0;
+  padding: 0;
+}
+/*End basic reset*/
+
+body
+{
+  font-family: "Helvetica Neue", Helvetica, Arial, sns-serif;
+  font-size: 12px;
+  color: #333;
+}
+
+
+/*a:link is for not visited, a:visited is for visited, and just a applies to both.*/
+/*a will also style anchor links*/
+
+a:link, a:visited
+{
+  text-decoration: none;
+  color: #313131;
+}
+
+a:hover, a:active
+{
+  text-decoration: none;
+  color: #666;
+}
+
+/*hide elements from browser but show for doc outline*/
+.hidden
+{
+  display: none;
+}
+
+/*Div is block level and no width specidied therefore stretches full screens*/
+#topBar
+{
+  background-color: #000;
+  height: 20px;
+}
+
+/*Site Container*/
+/*This is essentially a box that we place the whole site in.
+we center the box using margin 0 auto and give it a fixed width of 920 + 20px +20px (960px)*/
+
+#siteContainer
+{
+  margin: 0 auto;
+  width: 920px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#mainHeader
+{
+  margin-top: 40px;
+  padding-bottom: 40px;
+  overflow: hidden;
+  /* fixes colapsing parent
+  http://coding.smashingmagazine.com/2009/10/19/the-mystery-of-css-float-property */
+  border-bottom: solid 1px #DDD;
+}
+
+#logo
+{
+  width: 200px;
+  float: left;
+}
+
+#mainNav
+{
+  float: right;
+  width: 500px;
+}
+
+#promo
+{
+  margin-top: 40px;
+  overflow: hidden;
+  /* fixes colapsing parent*/
+  border-bottom: solid 1px #DDD;
+  padding-bottom: 40px;
+}
+
+/*Get rid of this, here just to give different height to promo*/
+#promo p
+{
+line-height: 250px;
+}
+
+#promoText
+{
+  float: left;
+  width: 600px;
+}
+
+#promoImg
+{
+  float: right;
+  width: 280px;
+}
+
+#productInfo
+{
+  margin-top: 40px;
+  overflow: hidden;
+  border-bottom: solid 1px #DDD;
+  padding-bottom: 40px;
+}
+
+/*Get rid of this, here just to give a different height to productInfo*/
+#productInfo p
+{
+  line-height: 300px;
+}
+
+.productDesc
+{
+  float: left;
+  width: 200px;
+  margin-right: 40px;
+}
+
+.productDescLast
+{
+  float: right;
+  width: 200px;
+}
+
+#mainFooter
+{
+  margin-top: 40px;
+  margin-bottom: 40px;
+  overflow: hidden;
+}
+
+#footerNav
+{
+  float: left;
+  width: 500px;
+}
+
+#copyRight
+{
+  float: right;
+  width: 310px;
+}
+
+/*page 2*/
