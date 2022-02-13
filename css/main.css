@@ -6,21 +6,20 @@ watch record
 ---*/
 p
 {
-  color: #fff;
-  line-height: 30px;
-  background: #000;
+  /*background-color: white;*/
   margin: 0;
   padding: 0;
   text-align: center;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', sans-serif, arial;
 }
 /*End basic reset*/
 
 body
 {
-  font-size: 12px;
-  color: #333;
-  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: #8A9FB4;
+  font-family: 'Roboto', sans-serif, arial;
+  background-color: #052146;
 
 }
 
@@ -31,13 +30,14 @@ body
 a:link, a:visited
 {
   text-decoration: none;
-  color: #313131;
+  color: #AD1129;
 }
 
 a:hover, a:active
 {
   text-decoration: none;
-  color: #666;
+  color: white;
+  text-decoration: underline solid 3px;
 }
 
 /*hide elements from browser but show for doc outline*/
@@ -67,7 +67,7 @@ we center the box using margin 0 auto and give it a fixed width of 920 + 20px +2
 /*__________________________________
           Main Nav Section
 __________________________________*/
-#mainNav
+.mainNav
 {
   margin-top: 40px;
   padding-bottom: 20px;
@@ -76,24 +76,40 @@ __________________________________*/
   http://coding.smashingmagazine.com/2009/10/19/the-mystery-of-css-float-property */
 }
 
-#logo
+.logo
 {
-  width: 50px;
+  width: 40px;
+  height: 40px;
+  margin-left: 20px;
   float: left;
 }
 
-#WebName
+.logo img
 {
-  float: left;
-  width: 250px;
-  margin-left: 270px;
+  width: 100%;
+  height: auto;
 }
 
-#Nav
+.logo img:hover
 {
-  float: right;
-  width: 250px;
+
 }
+
+
+.Nav
+{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.Nav a
+{
+  margin-top: 20px;
+  margin-left: 15px;
+
+  font-size: 13px;
+}
+
 
 /*__________________________________
           Main header Section
@@ -103,20 +119,35 @@ __________________________________*/
 {
   padding-bottom: 40px;
   overflow: hidden;
-  border-bottom: solid 1px #DDD;
 }
 
-#IntroHeader p
+
+#Header img
 {
-  line-height: 450px;
+  width: 100%;
+  height: auto;
 }
 
-#IntroHeader
+#Header:hover img
 {
-    float: left;
-    width: 100%;
+  -webkit-filter: blur(7px);
+  -moz-filter: blur(7px);
+  -o-filter: blur(7px);
+  -ms-filter: blur(7px);
+  filter: blur(4px);
 }
 
+#Header p
+{
+  position: absolute;
+  top: 230px;
+  left: 400px;
+  text-align: left;
+  line-height: 83px;
+  font-size: 50px;
+  font-family: 'Lobster', cursive;
+  color: #052146;
+}
 /*__________________________________
            left flow box
 __________________________________*/
@@ -124,46 +155,61 @@ __________________________________*/
 .left
 {
   margin-top: 100px;
-  padding-bottom: 100px;
+  padding-bottom: 80px;
   overflow: hidden;
-  border-bottom: solid 1px #DDD;
 }
 
-.leftImg
+.left img
 {
   float: left;
-  width: 250px;
-  margin-left: 80px;
+  width: 300px;
+  height: auto;
+  margin-left: 140px;
 }
+
 
 .left p
 {
-  line-height: 350px;
+  width: 300px;
+  height: auto;
+  text-align: left;
+  line-height: 20px;
 }
 
 .leftContent
 {
   float: left;
-  width: 500px;
-  margin-left: 20px;
+  width: 300px;
+  margin-left: 50px;
 }
 
+span
+{
+  color: #AD1129;
+  text-decoration: underline;
+  font-size: 13px;
+}
 /*__________________________________
            button box
 __________________________________*/
 
 .button
 {
-  margin-top: 20px;
-  padding-bottom: 20px;
+  padding: 5px 10px;
   overflow: hidden;
+  width: 80px;
+  border: white solid 1px;
+  border-radius: 20px;
+  margin-left: 420px;
+  font-size: 13px;
+  margin-bottom: 300px;
 }
 
-.theButton
+.button a
 {
-  width: 80px;
-  margin-left: 420px;
+  color: white;
 }
+
 
 /*page1*/
 
@@ -172,122 +218,145 @@ __________________________________*/
 __________________________________*/
 #benefit
 {
+  display: flex;
+  flex-direction: row;
+  padding-top: 60px;
   margin-top: 40px;
   overflow: hidden;
-  padding-bottom: 20px;
-}
-
-.benefitTitle
-{
+  padding-bottom: 60px;
   margin-bottom: 40px;
+  flex-grow: 1;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: #8A9FB4;
+  color: white;
+  font-size: 14px;
+  word-wrap: normal;
+  line-height: 20px;
 }
 
-.benefitTitle p
-{
-  line-height: 50px;
-}
-
-
-.benefitDetail
+.benefitBox img
 {
   float: left;
-  width: 250px;
-  margin-left: 55px;
+  width: 35px;
+  height: auto;
+  padding-bottom: 10px;
+  border-radius: 100%;
 }
 
-.benefitDetail2
+.benefitBox p
 {
-  float:left;
-  width: 250px;
-  margin-left: 30px;
-}
-/*Get rid of this, here just to give a different height to productInfo*/
-.benefitDetail p
-{
-  line-height: 300px;
+  padding: 10px;
+  float: right;
+  text-align: left;
+  width: 200px;
 }
 
-.benefitDetail2 p
+.animation img
 {
-  line-height: 300px;
+  animation: shake 0.5s;
+  -moz-animation:  shake 0.5s;
+  -webkit-animation:  shake 0.5s;
+
+  /*animation: color 7s;
+  -moz-animation: color 7s;
+  -webkit-animation: color 7s;*/
 }
+
+
+@keyframes shake
+{
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-20deg); }
+  20% { transform: translate(-3px, 0px) rotate(20deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(20deg); }
+  50% { transform: translate(-1px, 2px) rotate(-20deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-20deg); }
+  80% { transform: translate(-1px, -1px) rotate(20deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-20deg); }
+}
+
+@-moz-keyframes shake
+{
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-20deg); }
+  20% { transform: translate(-3px, 0px) rotate(20deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(20deg); }
+  50% { transform: translate(-1px, 2px) rotate(-20deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-20deg); }
+  80% { transform: translate(-1px, -1px) rotate(20deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-20deg); }
+}
+
+@-webkit-keyframes shake
+{
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-20deg); }
+  20% { transform: translate(-3px, 0px) rotate(20deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(20deg); }
+  50% { transform: translate(-1px, 2px) rotate(-20deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-20deg); }
+  80% { transform: translate(-1px, -1px) rotate(20deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-20deg); }
+}
+
+/*@keyframes color
+{
+	0%   {background: #64B079;}
+	25%  {background: #5EAD8C;}
+	50%  {background: #57A9A3;}
+	100% {background: #4FA4BF;}
+}
+
+@-moz-keyframes color
+{
+	0%   {background: #64B079;}
+	25%  {background: #5EAD8C;}
+	50%  {background: #57A9A3;}
+	100% {background: #4FA4BF;}
+}
+
+@-webkit-keyframes color
+{
+	0%   {background: #64B079;}
+	25%  {background: #5EAD8C;}
+	50%  {background: #57A9A3;}
+	100% {background: #4FA4BF;}
+}*/
 /*__________________________________
        flavor & price Section
 __________________________________*/
 #flavor
 {
-  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  justify-content: space-around;
   padding-bottom: 20px;
   overflow: hidden;
 }
 
-#flavor p
+#flavor img
 {
-  line-height: 300px;
-}
-
-.flavorBox
-{
-  float: left;
   width: 300px;
 }
 
-.flavorBox2
-{
-  float: left;
-  width: 300px;
-  margin-left: 10px;
-}
 
 /*page 2*/
 /*__________________________________
       normal & light section
 __________________________________*/
-#normalLight
-{
-  margin-top: 120px;
-  padding-bottom: 120px;
-  overflow: hidden;
-
-  border-bottom: solid 1px #DDD;
-}
-
-#sideBox
-{
-  width: 250px;
-  float: left;
-  margin-left: 100px;
-}
-
-#centerImg
-{
-  float: left;
-  width: 200px;
-  margin-left: 10px;
-}
-
-#sideBox2
-{
-  width: 250px;
-  float: left;
-  margin-left: 10px;
-}
-
-#normalLight p
-{
-  line-height: 250px;
-}
-
-/*__________________________________
-          flavorContent Section
-__________________________________*/
-#flavorChoice
-{
-  padding-bottom: 40px;
-  border-bottom: solid 1px #DDD;
-
-  overflow: hidden;
-}
 
 #flavorChoice p
 {
@@ -312,24 +381,128 @@ __________________________________*/
   margin-top: 40px;
 }
 
-/*__________________________________
-           button box
-__________________________________*/
-
-.button2
+/*about us page*/
+#aboutBox
 {
-  margin-top: 20px;
-  padding-bottom: 100px;
   overflow: hidden;
-  border-bottom: solid 1px #DDD;
+  margin-top: 60px;
+  padding-bottom: 60px;
 }
 
-.theButton2
+#aboutBox img
 {
-  width: 80px;
-  margin-left: 420px;
+  width: 800px;
+  margin-left: 60px;
 }
 
+#aboutBox p
+{
+  width: 800px;
+  margin-top: 40px;
+  padding-bottom: 80px;
+  margin-left: 60px;
+}
+
+/*contact page*/
+#contactForm
+{
+  overflow: hidden;
+  margin-left: 60px;
+  width: 800px;
+  height: auto;
+  background-color: #EBD99B;
+  border-radius: 20px;
+}
+
+textarea
+{
+  margin: 40px 40px 10px;
+  height: 500px;
+  width: 710px;
+  border-radius: 20px;
+  border-color: #EBD99B;
+}
+
+#name
+{
+  height: 30px;
+  margin: 10px 40px;
+  width: 710px;
+  border-radius: 20px;
+  border-color: #EBD99B;
+}
+
+#submit
+{
+  height: 30px;
+  margin: 10px 40px 80px;
+  width: 100px;
+  border-radius: 20px;
+  border-color: #EBD99B;
+  background-color: #052146;
+  color: white;
+}
+
+.contactBox
+{
+  color: #052146;
+}
+
+.contactBox h4
+{
+  font-weight: bold;
+  margin: 80px 40px 20px;
+  font-size: 25px;
+}
+
+.contactBox p
+{
+  float: left;
+  padding: 20px 40px 20px;
+  font-size: 20px;
+  text-align: left;
+}
+
+.marginLength
+{
+  margin-bottom: 80px;
+}
+
+/*landing page*/
+#landing
+{
+  overflow: hidden;
+  background-color: #EBD99B;
+  width: 900px;
+  height: auto;
+  margin: 40px;
+}
+
+
+#landing h4
+{
+  text-align: center;
+  justify-content: center;
+  padding-top: 100px;
+  padding-bottom: 90px;
+  font-family: Lobster, sans-serif, arial;
+  font-size: 66px;
+  color: black;
+}
+
+#landing img
+{
+  width: 30%;
+}
+
+#landingText a
+{
+  background-color: #052146;
+  color: white;
+  border-radius: 30%;
+  padding: 10px 20px;
+  margin-left: 300px;
+}
 
 /*__________________________________
           Footer Section
@@ -338,26 +511,34 @@ __________________________________*/
 
 #mainFooter
 {
-  margin-top: 40px;
+  margin-top: 130px;
   padding-bottom: 5px;
   overflow: hidden;
 }
 
 #footerNav
 {
-  float: left;
-  width: 300px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+#footNav a
+{
+  margin-top: 20px;
+  margin-left: 15px;
+  font-size: 13px;
 }
 
 #contact
 {
+  display: flex;
+  justify-content: flex-end;
   float: right;
-  width: 310px;
 }
 
-#copyright
+.Copyright
 {
+  font-size: 10px;
   padding-bottom: 10px;
-  overflow: hidden;
-  width: 150px;
+
 }

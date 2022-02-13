@@ -7,9 +7,9 @@
   <title>Web Page Scaffold</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
   <!-- reset.css must link before the main.css -->
-  <link href="css.reset.css" rel="stylesheet" type="text/css">
+  <link href="css/reset.css" rel="stylesheet" type="text/css">
   <link href="css/main.css" rel="stylesheet" type="text/css">
 </head>
 <body>
@@ -17,21 +17,19 @@
   <h1 class="hidden">Gas-X</h1>
   <main>
     <div id="siteContainer">
-      <nav id="mainNav">
+      <nav class="mainNav">
         <h2 class="hidden">Main Navigation section for Gas-X</h2>
-        <div id="logo">
+        <div class="logo">
           <h3 class="hidden">Logo</h3>
-          <p>Logo</p>
+          <img src="images/mountain.svg" alt="snow mountain icon">
         </div>
         <!-- end logo -->
-        <div id="WebName">
-          <h3 class="hidden">Gas-X</h3>
-          <p>Gas-X</P>
-          </div>
-        <!-- end title -->
-        <nav id="Nav">
+        <nav class="Nav">
           <h3 class="hidden">Navigation</h3>
-          <p>Nav</p>
+          <a href="index.html">HOME</a>
+          <a href="aboutUs.html">ABOUT US</a>
+          <a href="flavor.html">FLAVOR</a>
+          <a href="contact.html">CONTACT</a>
         </nav>
         <!-- end Nav -->
       </nav>
@@ -41,9 +39,12 @@
       <section>
         <header id="Header">
           <h2 class="hidden">Gas-X Intro</h2>
-          <div id="IntroHeader">
-            <p>Header & Hero Image</p>
-          </div>
+            <img src="images/heroImg_home.jpg" alt="Snow Mountain">
+              <p>
+                We are Gas-X,
+                <br>
+                The best beer for your gut.
+              </p>
         </header>
       </section>
       <!-- end the main header -->
@@ -51,13 +52,9 @@
 
       <section class="left">
         <h2 class="hidden">About Gas-X Section</h2>
-        <div class="leftImg">
-          <h3 class="hidden">About Gas-X Image</h3>
-          <p>About Gas-x Image</p>
-        </div>
-        <h3 class="hidden">About Content</h3>
+          <img class="leftimg" src="images/cloud.png" alt="bottle in the cloud">
         <div class="leftContent">
-          <p>About Gas-X Content</p>
+          <p>Working with coors beer company, we have developed a new type of alcohol that can help people with gas and bloating symptoms when drinking. From now on, you no longer have to worry about gastrointestinal problems caused by excessive drinking, and make your life more relaxed and happy. After using too much bread, pasta, wheat, beans, broccoli, you can also try Gas-X's new beer to make your gut feel more comfortable.</p>
         </div>
       </section>
       <!-- end the about Gas-X section -->
@@ -65,84 +62,89 @@
 
       <section id="benefit">
         <h2 class="hidden">Benefit of Gas-X</h2>
-        <div class="benefitTitle">
-          <p>Benefit of the Gas-X</p>
-        </div>
-        <section class="benefitDetail">
-          <h3 class="hidden">Benefit 1</h3>
-          <p>Benefit 1</p>
-        </section>
-        <!-- end benefit 1 -->
-        <section class="benefitDetail2">
-          <h3 class="hidden">Benefit 2</h3>
-          <p>Benefit 2</p>
-        </section>
-        <!-- end benefit 2 -->
-        <section class="benefitDetail2">
-          <h3 class="hidden">Benefit 3</h3>
-          <p>Benefit 3</p>
-        </section>
-        <!-- end benefit 3 -->
+          <section class="benefitBox">
+            <h3 class="hidden">Benefit 1</h3>
+            <div class="animation">
+              <img src="images/mountain.svg" alt="snow mountain icon">
+            </div>
+            <p>
+              Gas-X works fast to relieve your symptoms of gas and bloating.
+            </p>
+          </section>
+          <!-- end benefit 1 -->
+          <section class="benefitBox">
+            <h3 class="hidden">Benefit 2</h3>
+            <div class="animation">
+              <img src="images/mountain.svg" alt="snow mountain icon">
+            </div>
+            <p>
+              The active ingredient in Gas-X, simethicone, is a gas relief agent.
+            </p>
+          </section>
+          <!-- end benefit 2 -->
+          <section class="benefitBox">
+            <h3 class="hidden">Benefit 3</h3>
+            <div class="animation">
+              <img src="images/mountain.svg" alt="snow mountain icon">
+            </div>
+            <p>
+              Simethicone helps break up the gas bubbles in your digestive tract.
+            </p>
+          </section>
+          <!-- end benefit 3 -->
       </section>
       <!-- end the benefit of Gas-x -->
-      <section class="button">
-        <h2 class="hidden">Benefit Button</h2>
-        <div class="theButton"><p>Button</p></div>
-      </section>
       <!-- end button section -->
-
+      <a class="button" href="aboutUs.html">MORE</a>
 
       <section id="flavor">
         <h2 class="hidden">Flavor and Price Section</h2>
         <section class="flavorBox">
+          <img src="images/beer_noBG.jpg" alt="beer bottle">
           <h3 class="hidden">peppermint flavor</h3>
-          <p>flavor 1</p>
+          <p>peppermint flavor</p>
         </section>
         <!-- end flavor 1 -->
         <section class="flavorBox2">
           <h3 class="hidden">Cherry flavor</h3>
-          <p>flavor 2</p>
+          <img src="images/beer_noBG.jpg" alt="beer bottle">
+          <p>Cherry flavor</p>
         </section>
         <!-- end flavor 2 -->
         <section class="flavorBox2">
           <h3 class="hidden">Grape flavor</h3>
-          <p>flavor 3</p>
+          <img src="images/beer_noBG.jpg" alt="beer bottle">
+          <p>Grape flavor</p>
         </section>
         <!-- end flavor 3 -->
       </section>
       <!-- end flavor and price section -->
-      <section class="button2">
-        <h2 class="hidden">flavorButton</h2>
-        <div class="theButton2"><p>Button</p></div>
-      </section>
+      <a class="button" href="flavor.html">MORE</a>
+
       <!-- end button section -->
 
-
-      <section class="left">
-        <h2 class="hidden">Goal for Gas-X</h2>
-        <div class="leftImg">
-          <h3 class="hidden">Goal Image</h3>
-          <p>Image of Gas-x Goal</p>
-        </div>
-        <div class="leftContent">
-          <h3 class="hidden">The Goal</h3>
-          <p>Goal content & button</p>
-        </div>
-      </section>
-      <!-- end the goal section -->
-      <footer id="mainFooter">
-        <h2 class="hidden">Main Footer</h2>
-        <div id="footerNav"><p>Footer Nav</p></div>
-        <!-- end footerNav -->
-        <div id="contact"><p>Contact</p></div>
-        <!-- end the contact button -->
+      <footer>
+        <nav class="mainNav">
+          <h2 class="hidden">Main Navigation section for Gas-X</h2>
+          <div class="logo">
+            <h3 class="hidden">Logo</h3>
+            <img src="images/mountain.svg" alt="snow mountain icon">
+          </div>
+          <!-- end logo -->
+          <nav class="Nav">
+            <h3 class="hidden">Navigation</h3>
+            <a href="index.html">HOME</a>
+            <a href="aboutUs.html">ABOUT US</a>
+            <a href="flavor.html">FLAVOR</a>
+            <a href="contact.html">CONTACT</a>
+          </nav>
+          <!-- end Nav -->
+        </nav>
+        <!-- end main Nav -->
       </footer>
-      <!-- end mainFooter -->
-      <section id="copyright">
-        <h3 class="hidden">Copyright</h3>
-        <div id="copy"><p>Copyright © by Zhihan Chen</p></div>
-      </section>
-      <!-- end copyright -->
+      <div>
+        <p class="Copyright">Copyright © by Zhihan Chen</p>
+      </div>
     </div>
 
   </main>
