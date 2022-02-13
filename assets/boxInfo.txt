@@ -22,7 +22,7 @@
 
 #Footer
 	Footer Section
-	  margin-top: 40px
+	  margin-top: 130px
 	  padding-bottom: 5px
 
 	Footer Nav Box
@@ -34,7 +34,7 @@
 	  padding-bottom: 10px
 
 	Copyright Box
-	  150px width x 30px height
+	 font-size: 10px
 	  font-family: 'Roboto', sans-serif; 
 		size - 7px
 
@@ -42,7 +42,6 @@
 #Header
 	Header Section
 	  padding-bottom: 40px
-	  border-bottom: 1px solid #DDD
 
 	Header Box
 	  920px width x 450px height
@@ -52,17 +51,17 @@
 
 
 
-#About Gas-X
+#left flow box
 	About Section
 	  margin-top: 100px
-	  padding-bottom: 100px
+	  padding-bottom: 80px
 	  border-bottom: 1px solid #DDD
 
 	About Section Image Size
-	  250px width x 350px height
+	  300px width
 
 	About Content Box
-	  500px width x 350px height
+	  width 300px
 	  title - font-family: 'Lobster', cursive; 
 		size - 31px
 	  paragraph - font-family: 'Roboto', sans-serif; 
@@ -85,14 +84,14 @@
 	Benefit Title Section
 	  margin-bottom: 40px
 
-	Benefit Title Box
-	  40px width x 50px height
+	Benefit Title image
+	  width 35px
 	  font-family: 'Lobster', cursive; 
 		size - 31px
 	  font-color: #052146
 
 	Benefit Box
-	  250px width x 300px height
+	  width 200px
 	  font-family: 'Roboto', sans-serif; 
 		size: 14px
 	  font-color: #052146
@@ -106,22 +105,8 @@
 
 
 #Flavor and Price
-	Flavor Section
-	  margin-top: 50px
-	  padding-bottom: 20px
-
-	Flavor Box
-	  300px width x 300px height
-	  font-family: 'Roboto', sans-serif; 
-		size: 14
-	  font-color: #052146
-
-	Flavor Section Button
-	  margin-top: 20px
-	  padding-bottom: 20px
-
-	Flavor Section Button Box
-	  80px width x 30px height
+	flavor img
+	  width 300px
 
 
 
@@ -147,9 +132,6 @@
 
 
 #Flavor Choice
-	Flavor Choice Section
-	  padding-bottom: 40px
-
 	Flavor Image Box
 	  200px width x 400px height
 
@@ -165,3 +147,38 @@
 
 	Flavor Button Box
 	  80px width x 30px height
+
+#aboutBox
+	margin-top: 60px
+	padding-bottom: 60px
+
+#aboutBox image
+	width 800px
+
+#aboutBox paragraph
+	width 800px
+	margin-top: 40px
+	margin-left: 60px
+
+#contactForm
+	width 800px x height auto
+
+#textarea
+	margin: 40px 40px 10px
+	width 710px x height 500px
+
+#name
+	width 710px x height 30px
+
+#submit button
+	width 100px x height 30px
+
+#landing page
+	width900px x height auto
+
+#landing text box
+	padding-top:100px
+	padding-bottom: 90px
+
+landing image
+	width 30%
