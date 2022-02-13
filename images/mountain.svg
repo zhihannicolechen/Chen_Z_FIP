@@ -1,0 +1,41 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="8.5in" height="11in" viewBox="0 0 612 792">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #0971d4;
+      }
+
+      <!--.cls-1:hover img
+      {
+      animation: color 7s;
+      -moz-animation: color 7s;
+      -webkit-animation: color 7s;
+      }
+
+      @keyframes color
+      {
+      	0%   {background: yellow;}
+      	25%  {background: orange;}
+      	50%  {background: blue;}
+      	100% {background: navy;}
+      }
+
+      @-moz-keyframes color
+      {
+      0%   {background: yellow;}
+      25%  {background: orange;}
+      50%  {background: blue;}
+      100% {background: navy;}
+      }
+
+      @-webkit-keyframes color
+      {
+      0%   {background: yellow;}
+      25%  {background: orange;}
+      50%  {background: blue;}
+      100% {background: navy;}
+      }-->
+    </style>
+  </defs>
+  <polygon class="cls-1" points="246 195 15 546 573 544 390 275 350 332 246 195"/>
+</svg>
