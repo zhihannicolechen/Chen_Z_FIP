@@ -4,15 +4,6 @@
 missing part of code
 watch record
 ---*/
-p
-{
-  /*background-color: white;*/
-  margin: 0;
-  padding: 0;
-  text-align: center;
-  font-family: 'Roboto', sans-serif, arial;
-}
-/*End basic reset*/
 
 body
 {
@@ -20,7 +11,34 @@ body
   color: #8A9FB4;
   font-family: 'Roboto', sans-serif, arial;
   background-color: #052146;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: 'Roboto', sans-serif, arial;
+}
 
+
+/*hide elements from browser but show for doc outline*/
+.hidden
+{
+  display: none;
+}
+
+/*Div is block level and no width specidied therefore stretches full screens*/
+/*{
+  background-color: #000;
+  height: 20px;
+}
+*/
+/*Site Container*/
+/*This is essentially a box that we place the whole site in.
+we center the box using margin 0 auto and give it a fixed width of 920 + 20px +20px (960px)*/
+
+#siteContainer
+{
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 
@@ -56,10 +74,10 @@ a:hover, a:active
 /*This is essentially a box that we place the whole site in.
 we center the box using margin 0 auto and give it a fixed width of 920 + 20px +20px (960px)*/
 
+
 #siteContainer
 {
   margin: 0 auto;
-  width: 920px;
   padding-left: 20px;
   padding-right: 20px;
 }
@@ -78,53 +96,146 @@ __________________________________*/
 
 .logo
 {
-  width: 40px;
-  height: 40px;
-  margin-left: 20px;
-  float: left;
+  display: flex;
+  justify-content: flex-start;
+  margin: 0;
+  padding: 0;
 }
 
 .logo img
 {
-  width: 100%;
-  height: auto;
+  width: 50px;
 }
-
-
 
 .Nav
 {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
+  align-items: center;
+  background-color: none;
 }
 
-.Nav a
+.Nav ul
 {
-  margin-top: 20px;
-  margin-left: 15px;
-
-  font-size: 13px;
+  margin: 0;
+  padding: 0;
+  display: flex;
 }
 
+.Nav li
+{
+  list-style: none;
+}
 
+.Nav li a
+{
+  text-decoration: none;
+  color: #AD1129;
+  padding: 1rem;
+  display: block;
+}
+
+.Nav li a:hover, a:active
+{
+  text-decoration: none;
+  color: white;
+  text-decoration: underline solid 3px;
+}
+
+.toggleButton
+{
+  position: absolute;
+  top: .75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+  margin-top: 50px;
+}
+
+.toggleButton .bar
+{
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 641px) {
+  .toggleButton
+  {
+    display: flex;
+  }
+
+  .navList
+  {
+    display: none;
+  }
+
+  .Nav
+  {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .Nav ul
+  {
+    flex-direction: column;
+  }
+
+  .Nav li
+  {
+    text-align: center;
+  }
+
+  .Nav li a
+  {
+    padding: .5rem 1rem;
+  }
+
+  .Nav.active
+  {
+    display: flex;
+  }
+}
 /*__________________________________
           Main header Section
 __________________________________*/
-
-#Header
+.hero
 {
-  padding-bottom: 40px;
-  overflow: hidden;
+  position: relative;
 }
 
-
-#Header img
+.heroText
 {
+  text-align: left;
+  position: absolute;
+  z-index: 0;
   width: 100%;
-  height: auto;
 }
 
-#Header:hover img
+.heroText h4
+{
+  font-size: 7vw;
+  transform: translateY(9vw);
+  padding-left: 50px;
+  padding-top: 120px;
+  color: #052146;
+  font-family: 'Lobster', cursive, sans-serif;
+}
+
+.heroImages
+{
+  display: block;
+  justify-content: center;
+  overflow: visible;
+  z-index: -1;
+  width: 100%;
+}
+
+.hero:hover
 {
   -webkit-filter: blur(7px);
   -moz-filter: blur(7px);
@@ -133,123 +244,122 @@ __________________________________*/
   filter: blur(4px);
 }
 
-#Header p
+@media only screen and (max-width: 641px)
 {
-  position: absolute;
-  top: 230px;
-  left: 400px;
-  text-align: left;
-  line-height: 83px;
-  font-size: 50px;
-  font-family: 'Lobster', cursive;
-  color: #052146;
+  .heroText h4
+  {
+    font-size: 50px;
+    transform: translateY(9vw);
+    text-align: center;
+    justify-content: center;
+    padding: 0;
+    color: #8A9FB4;
+  }
 }
 /*__________________________________
-           left flow box
+          Index page
 __________________________________*/
-
+/*intro section*/
 .left
 {
-  margin-top: 100px;
-  padding-bottom: 80px;
-  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 200px;
 }
 
-.left img
+.leftimg
 {
-  float: left;
-  width: 300px;
-  height: auto;
-  margin-left: 140px;
+  margin-right: 40px;
 }
 
-
-.left p
+.leftimg img
 {
-  width: 300px;
+  width: 120%;
   height: auto;
-  text-align: left;
-  line-height: 20px;
 }
 
 .leftContent
 {
-  float: left;
-  width: 300px;
-  margin-left: 50px;
+  padding: 0;
+  margin-left: 40px;
+  text-align: left;
+  font-size: 20px;
+  line-height: 35px;
 }
 
-span
+
+@media only screen and (max-width: 641px)
 {
-  color: #AD1129;
-  text-decoration: underline;
-  font-size: 13px;
+  .left
+  {
+    display: flex;
+    flex-direction: column;
+    margin: 40px;
+    justify-content: center;
+  }
+
+  .leftimg
+  {
+    margin: 0;
+  }
+
+  .left img
+  {
+    width: 60%;
+  }
+
+  .leftContent
+  {
+    padding: 20px;
+    margin: 0;
+    text-align: center;
+    font-size: 16px;
+  }
 }
 /*__________________________________
-           button box
+       flavor & price Section
 __________________________________*/
 
-.button
-{
-  padding: 5px 10px;
-  overflow: hidden;
-  width: 80px;
-  border: white solid 1px;
-  border-radius: 20px;
-  margin-left: 420px;
-  font-size: 13px;
-  margin-bottom: 300px;
-}
-
-.button a
-{
-  color: white;
-}
-
-
-/*page1*/
-
-/*__________________________________
-          About benefit Section
-__________________________________*/
 #benefit
 {
   display: flex;
   flex-direction: row;
-  padding-top: 60px;
-  margin-top: 40px;
-  overflow: hidden;
-  padding-bottom: 60px;
-  margin-bottom: 40px;
-  flex-grow: 1;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+
+    background-image: url("../images/BenefitImg.jpg");
+    background-size: cover;
+    background-attachment: scroll;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.benefitBox
+{
+  display: flex;
+  flex-direction: column;
   justify-content: space-around;
-  background-color: #8A9FB4;
-  color: white;
-  font-size: 14px;
-  word-wrap: normal;
-  line-height: 20px;
+
+  color: #DDDDDD;
+  font-size: 24px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
-.benefitBox img
+
+.animation
 {
-  float: left;
-  width: 35px;
-  height: auto;
-  padding-bottom: 10px;
-  border-radius: 100%;
+  justify-content: center;
+  align-items: center;
 }
 
-.benefitBox p
-{
-  padding: 10px;
-  float: right;
-  text-align: left;
-  width: 200px;
-}
 
 .animation img
 {
+  width: 10%;
+
   animation: shake 0.5s;
   -moz-animation:  shake 0.5s;
   -webkit-animation:  shake 0.5s;
@@ -285,93 +395,246 @@ __________________________________*/
   80% { transform: translate(-1px, -1px) rotate(20deg); }
   100% { transform: translate(1px, -2px) rotate(-20deg); }
 }
+
+.benefitBox p
+{
+  justify-content: center;
+}
+
+
+@media only screen and (max-width: 641px)
+{
+  #benefit
+  {
+    flex-wrap: wrap;
+
+    padding: 40px;
+  }
+
+  .benefitBox
+  {
+    padding: 10px;
+    font-size: 18px;
+  }
+}
+
+/*js insert*/
+#bnavList {
+    padding: 20px;
+}
+
+#bnavList li {
+	display:inline;
+	list-style-type:none;
+	padding:0px 10px;
+	cursor:pointer;
+}
+
+
+#beerContainer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+	width:700px;
+	height:700px;
+	margin:0 auto;
+	overflow:hidden;
+	margin: 40px auto;
+}
+
+#images1
+{
+  position:relative;
+  width:4000px;
+
+  transition: all 1.5s;
+}
+#images1 img
+{
+  float: left;
+}
+
+
+.iconContainer {
+	width: 100px;
+	height: 100px;
+	display:inline-block;
+	overflow:hidden;
+	background-image:url(../images/photos.png);
+	background-repeat:no-repeat;
+  border-radius: 50%;
+
+  transition:transform .2s;
+  -webkit-transition:-webkit-transform .2s;
+  -moz-transition:-moz-transform .2s;
+  }
+
+.beer2
+  {
+    background-position:-100px 0px;
+  }
+
+
+  .beerInfo {
+    color: #DDDDDD;
+    font-size: 21px;
+    line-height: 1.5;
+    width: 50%;
+    padding-top: 24px;
+    margin: 0 auto 70px;
+    text-align: center;
+  }
+
+  @media only screen and (max-width: 641px)
+  {
+    #beerContainer {
+      display: flex;
+      flex-direction: column;
+      margin-top: 100px;
+    	width:300px;
+    	height:300px;
+    	margin:0 auto;
+    	overflow:hidden;
+    	margin: 40px auto;
+    }
+
+    #beerContainer img
+    {
+      width: 300px;
+    }
+
+    .iconContainer {
+    	width: 50px;
+    	height: 50px;
+      }
+
+    .beerInfo
+    {
+      font-size: 16px;
+      line-height: 22px;
+
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+    }
+  }
+
 /*__________________________________
-       flavor & price Section
+      flavor section
 __________________________________*/
-#flavor
+
+.left2
 {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  margin-top: 40px;
-  margin-bottom: 40px;
+
+  margin: 60px;
+  padding: 0;
   justify-content: space-around;
-  padding-bottom: 20px;
-  overflow: hidden;
 }
 
-#flavor img
+.leftimg1
 {
-  width: 300px;
-}
 
-
-/*page 2*/
-/*__________________________________
-      normal & light section
-__________________________________*/
-
-#flavorChoice p
-{
-  line-height: 400px;
-}
-
-.flavorImg
-{
-  float: left;
-  width: 200px;
-
-  margin-left: 140px;
-  margin-top: 40px;
-}
-
-.flavorContent
-{
-  float: left;
   width: 400px;
-
-  margin-left: 40px;
-  margin-top: 40px;
 }
 
-/*about us page*/
-#aboutBox
+.leftimg1 img
 {
-  overflow: hidden;
-  margin-top: 60px;
-  padding-bottom: 60px;
+  width: 100%;
 }
 
-#aboutBox img
+.leftContent1
 {
-  width: 800px;
-  margin-left: 60px;
+  width: 500px;
+  font-size: 20px;
+  line-height: 35px;
+
+  text-align: left;
 }
 
-#aboutBox p
+.titleBig
 {
-  width: 800px;
-  margin-top: 40px;
-  padding-bottom: 80px;
-  margin-left: 60px;
+  font-size: 50px;
+  font-family: 'Lobster', cursive, sans-serif;
+
+  padding-right: 50px;
+  padding-top: 20px;
+  padding-bottom: 25px;
+  padding-left: 0;
 }
 
-/*contact page*/
+.value
+{
+  font-size: 25px;
+  font-style: italic;
+
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 0px;
+}
+
+.price
+{
+  line-height: 35px;
+  color: #AD1129;
+  text-decoration: underline;
+
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 0px;
+}
+
+.buttonOrder
+{
+  padding: 7px 20px;
+  border-radius: 50px;
+
+  background-color: #AD1129;
+  color: #DDDDDD;
+  font-family: 'Lobster', cursive, sans-serif;
+  font-size: 16px;
+}
+
+
+@media only screen and (max-width: 641px)
+{
+  .left2
+  {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    margin: 10px;
+  }
+
+
+  .leftContent1
+  {
+    width: 400px;
+  }
+}
+
+
+/*____________________________________
+          contact page
+___________________________________*/
 #contactForm
 {
-  overflow: hidden;
-  margin-left: 60px;
-  width: 800px;
-  height: auto;
+  display: flex;
+  flex-direction: column;
+  margin: 140px;
+
   background-color: #EBD99B;
   border-radius: 20px;
+  text-align: left;
 }
 
 textarea
 {
-  margin: 40px 40px 10px;
+  margin: 100px 100px 0;
   height: 500px;
-  width: 710px;
+  width: 80%;
   border-radius: 20px;
   border-color: #EBD99B;
 }
@@ -379,8 +642,8 @@ textarea
 #name
 {
   height: 30px;
-  margin: 10px 40px;
-  width: 710px;
+  margin: 20px 100px 0;
+  width: 80%;
   border-radius: 20px;
   border-color: #EBD99B;
 }
@@ -388,8 +651,8 @@ textarea
 #submit
 {
   height: 30px;
-  margin: 10px 40px 80px;
-  width: 100px;
+  margin: 20px 100px;
+  width: 9%;
   border-radius: 20px;
   border-color: #EBD99B;
   background-color: #052146;
@@ -421,77 +684,224 @@ textarea
   margin-bottom: 80px;
 }
 
-/*landing page*/
-#landing
+@media only screen and (max-width: 641px)
 {
-  overflow: hidden;
-  background-color: #EBD99B;
-  width: 900px;
-  height: auto;
-  margin: 40px;
+
+  #contactForm
+  {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+
+    background-color: #EBD99B;
+    border-radius: 20px;
+    text-align: left;
+  }
+
+
+  textarea
+  {
+    margin: 20px;
+    height: 500px;
+    width: 80%;
+    border-radius: 20px;
+    border-color: #EBD99B;
+  }
+
+  #name
+  {
+    height: 30px;
+    margin: 20px;
+    width: 80%;
+    border-radius: 20px;
+    border-color: #EBD99B;
+  }
+
+  #submit
+  {
+    height: 30px;
+    margin: 20px;
+    width: 9%;
+    border-radius: 20px;
+    border-color: #EBD99B;
+    background-color: #052146;
+    color: white;
+    font-size: 7px;
+  }
+
+  .contactBox
+  {
+    color: #052146;
+  }
+
+  .contactBox h4
+  {
+    font-weight: bold;
+    margin: 80px 40px 20px;
+    font-size: 18px;
+  }
+  .contactBox p
+  {
+    float: left;
+    padding: 20px 40px 20px;
+    font-size: 16px;
+    text-align: left;
+  }
+
+  .marginLength
+  {
+    margin-bottom: 80px;
+  }
 }
-
-
-#landing h4
+/*____________________________________
+          About section
+___________________________________*/
+#aboutBox
 {
-  text-align: center;
+  display: flex;
   justify-content: center;
-  padding-top: 100px;
-  padding-bottom: 90px;
-  font-family: Lobster, sans-serif, arial;
-  font-size: 66px;
-  color: black;
+  flex-wrap: nowrap;
+  margin: 0;
+  padding: 0;
 }
 
-#landing img
+.aboutImg
 {
-  width: 30%;
+  margin: 150px;
 }
 
-#landingText a
+.aboutImg img
 {
-  background-color: #052146;
-  color: white;
-  border-radius: 30%;
-  padding: 10px 20px;
-  margin-left: 300px;
+  width: 60%;
+}
+
+.aboutText p
+{
+  margin-top: 55px;
+  font-size: 20px;
+  line-height: 40px;
+}
+
+@media only screen and (max-width: 641px)
+{
+  #aboutBox
+  {
+    margin-top: 40px;
+    justify-content: center;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .aboutImg
+  {
+    margin: 0;
+  }
+
+  .aboutImg img
+  {
+    width: 100%;
+  }
+
+  .aboutText p
+  {
+    margin-top: 25px;
+    line-height: 20px;
+    font-size: 17px;
+  }
+}
+/*__________________________________
+          Coop Section
+  _________________________________*/
+
+  .coop
+  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 90px;
+    flex-direction: column;
+  }
+
+  .coop img
+  {
+    display: flex;
+    width: 30%;
+    padding-bottom: 40px;
+  }
+
+  .coop h4
+  {
+    padding-bottom: 40px;
+    font-style: italic;
+    font-size: 50px;
+  }
+
+  .button
+  {
+    border-radius: 30%;
+    border: solid #ffffff 2px;
+    padding: 10px;
+    font-size: 18px;
+    color: #ffffff;
+    margin-top: 10px;
+  }
+
+@media only screen and (max-width: 641px)
+{
+  .coop
+  {
+    margin-top: 350px;
+    margin-bottom: 0;
+  }
+
+  .coop h4
+  {
+    font-size: 20px;
+    padding-bottom: 10px;
+  }
+
+  .button
+  {
+    padding: 5px;
+    font-size: 10px;
+    margin-top: 0;
+  }
 }
 
 /*__________________________________
           Footer Section
 __________________________________*/
 
-
-#mainFooter
-{
-  margin-top: 130px;
-  padding-bottom: 5px;
-  overflow: hidden;
-}
-
-#footerNav
-{
-  display: flex;
-  justify-content: flex-start;
-}
-
-#footNav a
-{
-  margin-top: 20px;
-  margin-left: 15px;
-  font-size: 13px;
-}
-
-#contact
-{
-  display: flex;
-  justify-content: flex-end;
-  float: right;
-}
-
 .Copyright
 {
   font-size: 10px;
   padding-bottom: 10px;
+}
 
+.social
+{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.social img
+{
+  width: 25px;
+  margin: 10px;
+  margin-left: 10px;
+}
+
+@media only screen and (max-width: 641px)
+{
+  .social
+  {
+    justify-content: space-between;
+  }
+
+  .footerLogo
+  {
+    display: none;
+  }
 }

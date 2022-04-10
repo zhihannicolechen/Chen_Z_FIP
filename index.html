@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Web Page Scaffold</title>
+  <title>Home</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
@@ -19,42 +19,57 @@
     <div id="siteContainer">
       <nav class="mainNav">
         <h2 class="hidden">Main Navigation section for Gas-X</h2>
-        <div class="logo">
-          <h3 class="hidden">Logo</h3>
-          <img src="images/mountain.svg" alt="snow mountain icon">
-        </div>
-        <!-- end logo -->
-        <nav class="Nav">
+        <div class="Nav">
           <h3 class="hidden">Navigation</h3>
-          <a href="index.html">HOME</a>
-          <a href="aboutUs.html">ABOUT US</a>
-          <a href="flavor.html">FLAVOR</a>
-          <a href="contact.html">CONTACT</a>
-        </nav>
+          <div class="logo">
+            <img src="images/mountain.svg" alt="snow mountain icon">
+          </div>
+          <a href="#" class="toggleButton">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </a>
+          <div class="navList">
+            <ul>
+              <li><a href="index.html">HOME</a></li>
+              <li><a href="aboutUs.html">ABOUT</a></li>
+              <li><a href="flavor.html">FLAVOR</a></li>
+              <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+          </div>
+        </div>
         <!-- end Nav -->
       </nav>
       <!-- end main Nav -->
 
 
       <section>
-        <header id="Header">
-          <h2 class="hidden">Gas-X Intro</h2>
-            <img src="images/heroImg_home.jpg" alt="Snow Mountain">
-              <p>
-                We are Gas-X,
-                <br>
-                The best beer for your gut.
-              </p>
-        </header>
+        <div class="hero">
+          <h2 class="hidden">About us section</h2>
+          <div class="heroText">
+            <h3 class="hidden">About us title</h3>
+            <h4>
+              We are Gas-X,
+              <br>
+              the best beer for your stomach.
+            </h4>
+          </div>
+          <img class="heroImages" src="images/heroImg_home.jpg" alt="snow mountain with the sun">
+        </div>
       </section>
       <!-- end the main header -->
 
 
       <section class="left">
         <h2 class="hidden">About Gas-X Section</h2>
-          <img class="leftimg" src="images/cloud.png" alt="bottle in the cloud">
+          <div class="leftimg">
+            <img src="images/cloud.png" alt="bottle in the cloud">
+          </div>
         <div class="leftContent">
-          <p>Working with coors beer company, we have developed a new type of alcohol that can help people with gas and bloating symptoms when drinking. From now on, you no longer have to worry about gastrointestinal problems caused by excessive drinking, and make your life more relaxed and happy. After using too much bread, pasta, wheat, beans, broccoli, you can also try Gas-X's new beer to make your gut feel more comfortable.</p>
+          <p>
+            Working with coors beer company, we have eveloped a new type of alcohol that can help people with gas and bloating symptoms when drinking. From now on, you no longer have to worry about gastrointestinal problems caused by excessive drinking, and make your life more relaxed and happy. After using too much bread, pasta, wheat, beans, broccoli, you can also try Gas-X's new beer to make your gut feel more comfortable.
+          </p>
         </div>
       </section>
       <!-- end the about Gas-X section -->
@@ -99,48 +114,61 @@
 
       <section id="flavor">
         <h2 class="hidden">Flavor and Price Section</h2>
-        <section class="flavorBox">
-          <img src="images/beer_noBG.jpg" alt="beer bottle">
-          <h3 class="hidden">peppermint flavor</h3>
-          <p>peppermint flavor</p>
-        </section>
-        <!-- end flavor 1 -->
-        <section class="flavorBox2">
-          <h3 class="hidden">Cherry flavor</h3>
-          <img src="images/beer_noBG.jpg" alt="beer bottle">
-          <p>Cherry flavor</p>
-        </section>
-        <!-- end flavor 2 -->
-        <section class="flavorBox2">
-          <h3 class="hidden">Grape flavor</h3>
-          <img src="images/beer_noBG.jpg" alt="beer bottle">
-          <p>Grape flavor</p>
-        </section>
-        <!-- end flavor 3 -->
+
       </section>
+
       <!-- end flavor and price section -->
-      <a class="button" href="flavor.html">MORE</a>
+      <section id="beerContainer">
+      	<div id="images1" style="right: 0">
+      		<img src="images/photo1.jpg"/>
+      		<img src="images/photo.jpg"/>
+
+          </div>
+      </section>
+
+      <nav id="beerNav">
+      	<ul id="bnavList">
+              <li>
+                <div class="iconContainer beer1" data-offset="0">
+                </div>
+              </li>
+              <li>
+                <div class="iconContainer beer2" data-offset="1">
+              </div>
+              </li>
+          </ul>
+      </nav>
+
+      <h1 id="name">Find out about the beers!</h1>
+      <p class="beerInfo"></p>
 
       <!-- end button section -->
 
       <footer>
         <nav class="mainNav">
           <h2 class="hidden">Main Navigation section for Gas-X</h2>
-          <div class="logo">
-            <h3 class="hidden">Logo</h3>
-            <img src="images/mountain.svg" alt="snow mountain icon">
-          </div>
-          <!-- end logo -->
-          <nav class="Nav">
+          <div class="Nav">
             <h3 class="hidden">Navigation</h3>
-            <a href="index.html">HOME</a>
-            <a href="aboutUs.html">ABOUT US</a>
-            <a href="flavor.html">FLAVOR</a>
-            <a href="contact.html">CONTACT</a>
-          </nav>
+            <div class="logo">
+              <img class="footerLogo" src="images/mountain.svg" alt="snow mountain icon">
+            </div>
+            <div class="navList">
+              <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="aboutUs.html">ABOUT</a></li>
+                <li><a href="flavor.html">FLAVOR</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+              </ul>
+            </div>
+          </div>
           <!-- end Nav -->
         </nav>
-        <!-- end main Nav -->
+        <div class="social">
+          <a href="#"><img src="images/facebook.svg" alt="facebook icon"></a>
+          <a href="#"><img src="images/instagram.svg" alt="instagram icon"></a>
+          <a href="#"><img src="images/twitter.svg" alt="twitter icon"></a>
+          <a href="#"><img src="images/youtube.svg" alt="youtube icon"></a>
+        </div>
       </footer>
       <div>
         <p class="Copyright">Copyright © by Zhihan Chen</p>
